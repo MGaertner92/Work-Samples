@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Resume</title>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	</head>
+	<body>
+		<div class="container">
+			<div class="jumbotron">
+				<h1 class="display-4 col-md-12">
+				Hi. I'm Mitchell Gaertner and this is my interactive resume, circa January 2019.
+				</h1>
+				<div class="col-md-12 fs-10">
+					(Really I'm just trying to show off some skills)
+				</div>
+				</br>
+				<div class="col-md-12 text-right">
+					<button id="learnmore" class="btn btn-primary col-md-4">Let's go!</button>
+				</div>
+			</div>
+			<div class="row">
+				<div id="cards" class="col-md-12 row collapse">
+					<div class="cardHolder col-md-4">
+						<div class="card">
+							<div class="card-body">
+								<h5 class="bold card-title">Education</h5>
+								<p class="card-text">
+									<ul class="list-group list-group-flush">
+										<li class="fs-12 list-group-item">
+											<div class="fs-14 bold">Bachelor of Arts Honors - English (2011 - 2017)</div>
+											<div>University of Saskatchewan, Saskatoon, SK</div>
+										</li>
+										<li class="fs-12 list-group-item">
+											<div class="fs-14 bold">Bachelor of Science - Computer Science 4yr. (In progress, 2017 - present)</div>
+											<div>University of Saskatchewan, Saskatoon, SK</div>
+											<div>Anticipated graduation: Spring 2020</div>
+										</li>
+									</ul>
+								</p>
+								<div class="text-center">
+									<button id="edDet" class="btn btn-primary" data-toggle="modal" data-taget="#myModal">More Education Details</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="cardHolder col-md-4">
+						<div class="card">
+							<div class="card-body">
+								<h5 class="bold card-title">Technical Skills</h5>
+								<p class="card-text">
+									<ul class="list-group list-group-flush">
+										<li class="fs-12 list-group-item">
+											Expansive experience with Hyper Text Markup Language (HTML)
+										</li>
+										<li class="fs-12 list-group-item">
+											Robust knowledge of CSS styling tools, including raw CSS as well as Bootstrap styling toolkit.
+										</li>
+										<li class="fs-12 list-group-item">
+											Strong programming fundamentals, especially in JavaScript and Java web programming, including extensive knowledge of the jQuery JavaScript library and Angular JavaScript framework. Also familiar with Python and C programming languages.
+										</li>
+									</ul>
+								</p>
+								<div class="text-center">
+									<button id="techDet" class="btn btn-primary" data-toggle="modal" data-taget="#myModal">More Technical Details</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="cardHolder col-md-4">
+						<div class="card">
+							<div class="card-body">
+								<h5 class="bold card-title">Communication and Interpersonal Skills</h5>
+								<p class="card-text">
+									<ul class="list-group list-group-flush">
+										<li class="fs-12 list-group-item">
+											Substantial written communication skills, including both concise and descriptive technical writing.
+										</li>
+										<li class="fs-12 list-group-item">
+											Experience with the production of technical documentation, intended for both technical and non-technical audiences.
+										</li>
+										<li class="fs-12 list-group-item">
+											Comfortable formulating and delivering presentations.
+										</li>
+										<li class="fs-12 list-group-item">
+											Experience working within both small and large teams. Comfortable working individually or in collaborative group settings.
+										</li>
+									</ul>
+								</p>
+								<div class="text-center">
+									<button id="comDet" type="button" class="btn btn-primary" data-toggle="modal" data-taget="#myModal">More Communication Details</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="edDetails" class="collapse">
+					<div class="fs-14">
+						<h5 class="bold">Bachelor of Arts Honors - English</h5>
+						<span class="fs-12">I acquired my BAH with a major in English in spring of 2017. Since my graduation, my focus has shifted from the study of language to a focus on technology. Despite this shift, my time spent earning this degree generated a lifelong interest in writing and communications. While working towards this degree, I had aspirations of working in journalism. These aspirations remain, but at this point in time I consider my writing to be more of a hobby than a professional interest. Despite this shift, I firmly believe that this background is a valuable supplement to my technological knowledge.</span>
+					</div>
+					<div class="fs-14">
+						<h5 class="bold">Bachelor of Science 4yr. - Computer Science (in progress)</h5>
+						<span class="fs-12">During my tenure as an English major, I took many electives which helped qualify me towards a Computer Science degree. By the time of my convocation, I was already registered in a full-time regiment of summer classes working towards my second degree. At the time of writing, I am only four classes shy of my computer science degree, but I have put my degree on hold to participate in the Computer Science Professional Internship Program (CSPIP). This has resulted in my current position with Federated Co-operatives Limited as a Web Developer. I hope to work in professional web development following my graduation.</span>
+					</div>
+					<button class="back btn btn-primary col-md-2">Back</button>
+				</div>
+				<div id="techDetails" class="collapse">
+					<div class="fs-14">
+						<h5 class="bold">Programming</h5>
+						<span class="fs-12">I have experience with a wide variety of programming languages and libraries. At this point in time, my strongest programming languages are JavaScript and Java geared towards web development. I also have substantial programming experience with C and Python. Furthermore, I firmly believe that the breadth of my knowledge regarding programming fundamentals and my experience with multiple languages helps me to quickly learn and adopt whatever languages may be required. Currently, I am very interested in learning both golang and PHP. Lastly, I am familiar with common programming supplemental tools such as version control (git and SVN), various IDEs (including Android Studio, Eclipse, and RAD), and database </span>
+					</div>
+					<div class="fs-14">
+						<h5 class="bold">Web Development</h5>
+						<span class="fs-12">My experience with web development spans many languages and frameworks. I am proficient with HTML, CSS (including Bootstrap), JavaScript (including jQuery, TypeScript, Vue, and Angular), and Java (including the Spring framework). I am familiar with IBM Websphere Portal Web Content Management system. I believe that my familiarity with Websphere as well as my experience working in professional web development should provide me with a strong foundation for learning other web content management systems such as Drupal and Wordpress. Currently, I am interested in learning to develop using the React JavaScript framework</span>
+					</div>
+					<button class="back btn btn-primary col-md-2">Back</button>
+				</div>
+				<div id="comDetails" class="collapse">
+					<div class="fs-14">
+						<h5 class="bold">Writing & Documentation</h5>
+						<span class="fs-12">I have confidence in my ability to produce both technical and non-technical writing. During the scope of my education, I have been responsible for creating technical documentation for my assignments, class projects, and my work during my internship. </span>
+					</div>
+					<div class="fs-14">
+						<h5 class="bold">Collaboration</h5>
+						<span class="fs-12">Many of my computer science classes focused upon collaborative development with a team of students. I have learned to thrive on teams of all sizes and I believe I am excellent at finding my niche and fitting into the team. Currently, I work on a team of approximately twelve developers.</span>
+					</div>
+					<div class="fs-14">
+						<h5 class="bold">Tools</h5>
+						<span class="fs-12">I am comfortable using the full suite of Microsoft Office 365 products, Google Docs, and other collaborative tools. While my experience varies from product to product, I have no hesitation regarding learning and using new software. </span>
+					</div>
+					<button class="back btn btn-primary col-md-2">Back</button>
+				</div>
+				<div class="text-center col-md-12">
+					<span class="fs-12">References available upon request. <a href="mailto:mitchell.gaertner@gmail.com">Please email me for more details.</a></span>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script>
+		$(function(){
+		});
+		$("#learnmore").on('click', function(){
+			$("#details").collapse("toggle");
+			$("#cards").collapse("toggle");
+			$("#edDetails").collapse("hide");
+			$("#techDetails").collapse("hide");
+			$("#comDetails").collapse("hide");
+		});
+		$(".back").on('click', function(){
+			$("#cards").collapse("show");
+			$("#edDetails").collapse("hide");
+			$("#techDetails").collapse("hide");
+			$("#comDetails").collapse("hide");
+		});
+		$("#edDet").on('click', function(){
+			$("#cards").collapse("toggle");
+			$("#edDetails").collapse("toggle");
+		});
+		$("#techDet").on('click', function(){
+			$("#cards").collapse("toggle");
+			$("#techDetails").collapse("toggle");
+		});
+		$("#comDet").on('click', function(){
+			$("#cards").collapse("toggle");
+			$("#comDetails").collapse("toggle");
+		});
+	</script>
+	<style>
+		.fs-10 {
+			font-size: 10px;
+		}
+		.fs-12 {
+			font-size: 12px;
+		}
+		.fs-14 {
+			font-size: 14px;
+		}
+		.fs-16 {
+			font-size: 16px;
+		}
+		.fs-20 {
+			font-size: 20px;
+		}
+		.bold {
+			font-weight: 600;
+		}
+		.btn {
+			border-radius: 0;
+		}
+		.btn-primary {
+			background-color: black;
+			border-color: black;
+		}
+		.btn-primary:active, .btn-primary:hover{
+			background-color: gray !important;
+		}
+		.back {
+			margin-top: 25px;
+			float: right;
+		}
+	</style>
+</html>
